@@ -23,11 +23,12 @@ public class Appium01 {
         capabilities.setCapability(MobileCapabilityType.APP, "C:/Users/fylmz/IdeaProjects/MobileTest/src/Apps/apiDemos.apk");
         capabilities.setCapability("appPackage","com.touchboarder.android.api.demos");
         capabilities.setCapability("appActivity","com.touchboarder.androidapidemos.MainActivity");
+        capabilities.setCapability("noReset",true);//aplication un izinlzri sormadan acilmasini istiyorsak bunu yukleriz
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
-        driver.findElementById("com.android.permissioncontroller:id/continue_button").click();
-        MobileElement okButton=driver.findElementByXPath("//android.widget.Button[@text()='OK']");
-        okButton.click();
+        //driver.findElementById("com.android.permissioncontroller:id/continue_button").click();
+       // MobileElement okButton=driver.findElementByXPath("//android.widget.Button[@text()='OK']");
+       // okButton.click();
 
 
     }
