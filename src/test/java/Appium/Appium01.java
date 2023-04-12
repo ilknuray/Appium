@@ -30,6 +30,8 @@ public class Appium01 {
        // MobileElement okButton=driver.findElementByXPath("//android.widget.Button[@text()='OK']");
        // okButton.click();
 
+        driver.closeApp();
+
 
     }
 }
