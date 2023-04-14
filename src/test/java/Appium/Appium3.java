@@ -18,7 +18,7 @@ public class Appium3 {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "RealDevice");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        capabilities.setCapability(MobileCapabilityType.APP, "C:/Users/fylmz/IdeaProjects/MobileTest/src/Apps/Calculator.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "C:/Users/fylmz/IdeaProjects/MobileTest/src/Apps/apiDemos.apk");
         capabilities.setCapability("appPackage","com.android.chrome");
         capabilities.setCapability("appActivity","org.chromium.chrome.browser.ChromeTabbedActivit");
         capabilities.setCapability("noReset",true);
