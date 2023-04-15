@@ -21,7 +21,7 @@ public class Appium4 {
         capabilities.setCapability("noReset", true);
         capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
         capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,60000);
-        capabilities.setCapability("chromeDriverExecutable","C:/Users/fylmz/IdeaProjects/MobileTest/src/driver/chromedriver.exe");
+        capabilities.setCapability("chromedriverExecutable","C:/Users/fylmz/IdeaProjects/MobileTest/src/driver/chromedriver.exe");
         Thread.sleep(5000);
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         Thread.sleep(5000);
