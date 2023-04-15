@@ -20,7 +20,7 @@ public class Appium3 {
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "RealDevice");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         capabilities.setCapability("noReset", true);
-        capabilities.setCapability(MobileCapabilityType.APP, "C:/Users/fylmz/IdeaProjects/MobileTest/src/Apps/Calculator.apk");
+
         capabilities.setCapability("appPackage", "com.android.chrome");
         capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
         Thread.sleep(5000);
