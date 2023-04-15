@@ -24,5 +24,6 @@ public class AppiumUiSelector5 {
         capabilities.setCapability("noReset", true);//aplication un izinlzri sormadan acilmasini istiyorsak bunu yukleriz
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         driver.findElementByAndroidUIAutomator("UiSelector().resourceId(\"cm.aptoide.pt:id/refresh_layout\")").click();
+        driver.findElementByAndroidUIAutomator("UiSelector().resourceId(\"cm.aptoide.pt:id/refresh_layout\").enabled(true)").getAttribute("enabled");
     }
 }
