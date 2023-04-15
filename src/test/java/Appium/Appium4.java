@@ -5,6 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -49,6 +50,22 @@ public class Appium4 {
         MobileElement signInPage=driver.findElementByXPath("//h2");
         Assert.assertTrue(signInPage.isDisplayed());
         Thread.sleep(5000);
+        MobileElement create=driver.findElementByXPath("//*[@class='a-icon a-accordion-radio a-icon-radio-inactive']");
+        create.click();
+        Thread.sleep(5000);
+        MobileElement firstName=driver.findElementByXPath("//input[@id='ap_customer_name']");
+        firstName.sendKeys("aaaa");
+        Thread.sleep(5000);
+        MobileElement lastName=driver.findElementByXPath("//input[@id='ap_email']");
+        lastName.sendKeys("bbbb"+ Keys.PAGE_DOWN);
+        Thread.sleep(5000);
+        MobileElement password=driver.findElementByXPath("//input[@id='ap_password']");
+        //password.click();
+        password.sendKeys("1234");
+        Thread.sleep(5000);
+        MobileElement continu=driver.findElementByXPath("//input[@id='continue'][1]");
+        continu.click();
+        driver.closeApp();
 
 
     }
