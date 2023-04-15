@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Appium5 {
+public class AppiumUiSelector5 {
     @Test
     public void test() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
