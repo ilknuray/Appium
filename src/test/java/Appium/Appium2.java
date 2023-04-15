@@ -25,7 +25,7 @@ public class Appium2 {
         capabilities.setCapability("noReset",true);
         capabilities.setCapability(MobileCapabilityType.APP, "C:/Users/fylmz/IdeaProjects/MobileTest/src/Apps/Calculator.apk");
         Thread.sleep(5000);
-        AndroidDriver<MobileElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         Thread.sleep(5000);
 
     }
